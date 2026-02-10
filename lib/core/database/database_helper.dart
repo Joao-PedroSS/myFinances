@@ -37,7 +37,7 @@ class DatabaseHelper {
     ];
 
     for (final table in tables) {
-      db.execute(table.tableScheme);
+      db.execute(table.tableSchema);
     }
   }
 }

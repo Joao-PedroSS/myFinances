@@ -5,7 +5,7 @@ class TransactionsTable extends DatabaseTable {
   String get tableName => 'transactions_table';
 
   @override
-  String get tableScheme =>
+  String get tableSchema =>
       '''
     CREATE TABLE IF NOT EXISTS $tableName (
       id INTEGER PRIMARY KEY AUTOINCREMENT,

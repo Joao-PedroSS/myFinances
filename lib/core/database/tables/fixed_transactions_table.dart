@@ -5,7 +5,7 @@ class FixedTransactionsTable extends DatabaseTable {
   String get tableName => 'fixed_transactions_table';
 
   @override
-  String get tableScheme => '''
+  String get tableSchema => '''
     CREATE TABLE IF NOT EXISTS fixed_transactions_table (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
