@@ -1,5 +1,5 @@
 abstract class DatabaseTable {
-  String get databaseName;
-  String get databaseScheme;
-  String get databaseDrop;
+  String get tableName;
+  String get tableScheme;
+  String get tableDrop;
 }
