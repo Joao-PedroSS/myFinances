@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:my_finances/core/app_module.dart';
-import 'package:my_finances/core/app_widget.dart';
+import 'package:my_finances/ui/pages/main_page.dart';
 
 void main() {
-  runApp(ModularApp(module: AppModule(), child: AppWidget()));
+  runApp(MainPage());
 }

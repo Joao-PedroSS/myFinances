@@ -13,7 +13,8 @@ class FixedTransactionsTable extends DatabaseTable {
       amount REAL NOT NULL,
       type_id INT NOT NULL,
       category_id INTEGER,
-      completed BOOL,
+      completed INTEGER DEFAULT 0,
+      start_at TEXT,
       completed_at TEXT,
       created_at TEXT DEFAULT (datetime('now')),
       
