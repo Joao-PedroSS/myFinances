@@ -1,3 +1,6 @@
+import 'package:my_finances/core/database/tables/categories_table.dart';
+import 'package:my_finances/core/database/tables/fixed_transactions_table.dart';
+import 'package:my_finances/core/database/tables/transaction_type_table.dart';
 import 'package:my_finances/core/database/tables/transactions_table.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
@@ -26,7 +29,12 @@ class DatabaseHelper {
   }
 
   Future<void> _onCreate(Database db, int version) async {
-    final tables = [TransactionsTable()];
+    final tables = [
+      TransactionsTable(),
+      FixedTransactionsTable(),
+      CategoriesTable(),
+      TransactionTypeTable(),
+    ];
 
     for (final table in tables) {
       db.execute(table.tableScheme);
